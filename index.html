@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Raj's Website </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="portfolio.html">Portfolio</a> 
+        <a href="hobbies.html">Hobbies</a> 
+        <a href="dreams.html">Dreams</a>
+    </nav>
+    <img src="/Spring_2025_Git_Exercise/Week 2/images/raj.png" alt="Raj's cool photo" height="200px"> 
+    <h1> ABOUT ME</h1>
+    <p> A computer IT student at Ulsan College, South Korea, with a passion for programming and teaching. Balancing studies with working as a kindergarten teacher and enjoy exploring new career opportunities. Originally from Nepal, can speak multiple languages and is keen on personal and professional growth. </p>
+
+    <button onclick="toggleDarkMode()">Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+
+            // Change button text based on mode
+            let button = document.querySelector("button");
+            if (document.body.classList.contains("dark-mode")) {
+                button.textContent = "Light Mode";
+            } else {
+                button.textContent = "Dark Mode";
+            }
+        }
+    </script>
+</body>
+</html>
